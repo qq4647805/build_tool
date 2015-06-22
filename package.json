@@ -1,0 +1,19 @@
+{
+  "name": "build_tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "md extend_lib src & cd src & md js img fonts pkg css",
+    "w":"fis release -p --live --watch",
+    "p":"fis release -p",
+    "d":"fis release -pd ../dist",
+    "rm":"rm -rf ../dist",
+    "rd":"npm run rm & npm run d",
+    "pom":"fis release -pom",
+    "s":"fis server start",
+    "o":"fis server open"
+  },
+  "author": "lxx",
+  "license": "ISC"
+}
