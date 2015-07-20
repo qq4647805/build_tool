@@ -60,6 +60,14 @@ fis.config.set('settings.spriter.csssprites', {
     //使用矩阵排列方式，默认为线性`linear`
     layout: 'matrix'
 });
+//使用fis-parser-jade插件编译jade文件
+fis.config.set('modules.parser.jade', 'jade');
+//jade文件经过编译后输出为html文件
+fis.config.set('roadmap.ext.jade', 'html');
+var jadeConf = {
+  pretty  : true
+};
+fis.config.set('settings.parser.jade', jadeConf);
 // fis.config.set('modules.postprocessor.js', function (content, file, settings) {
 //     // escapeShellCmd('start');
     
@@ -91,6 +99,10 @@ fis.config.set('roadmap.path', [
     //所有src/下的html引入 根 目录
     {
         reg: /src\/(.*\.html)/,
+        release: '$1'
+    },
+    {
+        reg: /src\/(.*\.jade)/,
         release: '$1'
     },
     //所有templates下的html引入 templates 目录
