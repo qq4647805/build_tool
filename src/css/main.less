@@ -3,3 +3,104 @@
 //@import (less) '??.css';//引入用less的方式引入css
 //@import (reference) '??.less';//使用Less文件但不输出
 //.navbar:extend(.navbar all) {}//这样就只会从Bootstrap中拉入.navbar相关的样式
+//css入口文件
+//@import '??.less';//引入less
+//@import (less) '??.css';//引入用less的方式引入css
+//@import (reference) '??.less';//使用Less文件但不输出
+//.navbar:extend(.navbar all) {}//这样就只会从Bootstrap中拉入.navbar相关的样式
+// @import '../../bower_components/more-or-less/lib/normalize.less';
+// @import '../../bower_components/more-or-less/lib/reset.less';
+// @import (less) '../../bower_components/bootstrap/dist/css/bootstrap.css';
+// @import (less) '../../extend_lib/ztree/css/zTreeStyle/zTreeStyle.css';
+// @import (less) '../fonts/iconfont.css';
+// body {
+//     font-family: "宋体", Arial, sans-serif;
+//     -webkit-backface-visibility: none;
+//     position: static;
+//     overflow-x: hidden;
+//     -ms-overflow-style: scrollbar;
+// }
+@import './lib.less';
+@import (reference) 'core.less';
+@import './style.less';
+@import './basic.less';
+@import './edu.less';
+@import './job.less';
+@import './training.less';
+@import './build.less';
+@import './index.less';
+@ps_width:750px;
+* {
+    box-sizing: border-box;
+    outline: none;
+    vertical-align: middle;
+    
+}
+p, ol, ul, {
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-size:100px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#333;
+}
+body{
+	margin:0 auto;
+}
+a{
+    text-decoration: none !important;
+    color:inherit;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 320px){
+    html {
+        font-size: 32000/@ps_width !important;
+    }
+}
+@media only screen and (min-width: 360px){
+    html {
+        font-size: 36000/@ps_width !important;
+    }
+}
+@media only screen and (min-width: 375px){
+    html {
+        font-size: 37500/@ps_width !important;
+    }
+}
+@media only screen and (min-width: 414px){
+    html {
+        font-size: 41400/@ps_width !important;
+    }
+}
+@media only screen and (min-width: 640px){
+    html {
+        font-size: 64000/@ps_width !important;
+    }
+}
+@media only screen and (min-width: 736px){
+    html {
+        font-size: 73600/@ps_width !important;
+    }
+}
+@media only screen and (min-width: 750px){
+    html {
+        font-size: 75000/@ps_width !important;
+    }
+}
+@media only screen and (min-width: 768px){
+    html {
+        font-size: 76800/@ps_width !important;
+    }
+}
+@media only screen and (min-width: 960px){
+    html {
+        font-size: 96000/@ps_width !important;
+    }
+}
+@media only screen and (min-width: 1024px){
+    html {
+        font-size: 102400/@ps_width !important;
+    }
+}
