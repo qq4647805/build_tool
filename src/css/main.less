@@ -21,7 +21,7 @@
 //     -ms-overflow-style: scrollbar;
 // }
 @import (reference) './core.less';
-@import './style.less';
+
 @ps_width:750px;
 * {
     box-sizing: border-box;
@@ -67,6 +67,11 @@ a{
         font-size: 41400/@ps_width !important;
     }
 }
+@media only screen and (min-width: 600px){
+    html {
+        font-size: 60000/@ps_width !important;
+    }
+}
 @media only screen and (min-width: 640px){
     html {
         font-size: 64000/@ps_width !important;
@@ -87,6 +92,11 @@ a{
         font-size: 76800/@ps_width !important;
     }
 }
+@media only screen and (min-width: 800px){
+    html {
+        font-size: 80000/@ps_width !important;
+    }
+}
 @media only screen and (min-width: 960px){
     html {
         font-size: 96000/@ps_width !important;
@@ -97,3 +107,4 @@ a{
         font-size: 102400/@ps_width !important;
     }
 }
+@import './style.less';
