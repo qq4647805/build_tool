@@ -10,10 +10,10 @@ fis.config.set('modules.postpackager', 'simple');
 //     ]
 // });
 
-//Step 3. 取消下面的注释可以开启simple对零散资源的自动合并
+// //Step 3. 取消下面的注释可以开启simple对零散资源的自动合并
 // fis.config.set('settings.postpackager.simple.autoCombine', true);
-//开启autoReflow使得在关闭autoCombine的情况下，依然会优化脚本与样式资源引用位置
-fis.config.set('settings.postpackager.simple.autoReflow', true);
+// //开启autoReflow使得在关闭autoCombine的情况下，依然会优化脚本与样式资源引用位置
+// fis.config.set('settings.postpackager.simple.autoReflow', true);
 // fis.config.set('settings.postpackager.simple.output', 'src/pkg/main');
 
 
@@ -40,6 +40,9 @@ fis.config.set('pack', {
     //对合并的aio.css进行处理
     'src/pkg/main.css': [
        'src/css/main.less'
+    ],
+    'src/pkg/lib.css': [
+       'src/css/lib.less'
     ],
     // 'src/pkg/ee.css': [
     //    'src/single/ee.css'

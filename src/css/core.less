@@ -1,0 +1,39 @@
+.red {
+    background-color: red !important;
+    opacity: 0.5;
+}
+
+.yh {
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+}
+
+.vleft {
+    vertical-align: top;
+    float: left;
+}
+
+.vright {
+    vertical-align: top;
+    float: right;
+}
+
+.bg_img_p(@name) {
+    background-image: url('../img/@{name}.png?__sprite');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg_img_a(@name) {
+    background-image: url('../img/@{name}.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.bg_img_j(@name) {
+    background-image: url('../img/@{name}.jpg');
+}
+
+.bg_png_m(@name) {
+    background-image: url('../img/@{name}.png');
+}
