@@ -1,3 +1,4 @@
-# build_tool
-前端脚手架<br />
-用fis构建前端的框架
+# fis_build_tool
+基于FIS2的前端脚手架<br />
+<br />
+FIS:http://fex.baidu.com/fis-site/index.html

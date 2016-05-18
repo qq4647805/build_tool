@@ -1,6 +1,6 @@
 {
-  "name": "build_tool",
-  "version": "1.0.0",
+  "name": "fis_build_tool",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,8 @@
     "rd":"npm run rm & npm run d",
     "pom":"fis release -pom",
     "s":"fis server start",
-    "o":"fis server open"
+    "o":"fis server open",
+    "sw":"npm run s & npm run w"
   },
   "author": "lxx",
   "license": "ISC"
